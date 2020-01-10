@@ -34,7 +34,7 @@ const prepareDOMElements = () => {
 
 const prepareDOMEvents = () => {
     $addBtn.addEventListener('click', addNewTask);
-    $ulList.addEventListener('click', checkClick);
+    $ulList.firstElementChild.firstElementChild.addEventListener('click', checkClick);
     $closeTodoBtn.addEventListener('click', closePopup);
     $addPopupBtn.addEventListener('click', changeTodo);
     $toDoInput.addEventListener('keyup', enterCheck);
